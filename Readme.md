@@ -48,10 +48,11 @@ doc_id,content
 
 
 # 搜尋:python機器學習
-```
-![image](https://github.com/user-attachments/assets/f9619fd8-fac0-43f9-9f2b-26c3e258da42)
 
-```
+![image](https://github.com/user-attachments/assets/2d0e8229-2aa4-49b5-bb7f-8512d9d096b9)
+
+
+
 
 # 參考資料
 
