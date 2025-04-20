@@ -49,10 +49,8 @@ doc_id,content
 
 # 搜尋:python機器學習
 ```
-搜尋結果：
-ScoredDoc(docId='30', score=1.469549674440421, termHits=[TermHit(term='python', tf=0.1666666716337204), TermHit(term='機器', tf=0.1666666716337204), TermHit(term='學習', tf=0.1666666716337204)])
-ScoredDoc(docId='18', score=0.27080502414553026, termHits=[TermHit(term='學習', tf=0.10000000149011612)])
-ScoredDoc(docId='1', score=0.12309319462765432, termHits=[TermHit(term='python', tf=0.04545454680919647)])
+![image](https://github.com/user-attachments/assets/f9619fd8-fac0-43f9-9f2b-26c3e258da42)
+
 ```
 
 # 參考資料
