@@ -1,0 +1,31 @@
+<!-- 檔案路徑：templates/index.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>搜尋引擎 Demo</title>
+</head>
+<body>
+  <h2>🔍 搜尋系統</h2>
+  <form method="get" action="/search">
+    <input type="text" name="q" value="{{ query or '' }}" placeholder="輸入搜尋詞...">
+    <button type="submit">搜尋</button>
+  </form>
+
+  {% if results %}
+    <h3>搜尋結果：</h3>
+    <ul>
+    {% for doc in results %}
+      <li>
+        <strong>Doc content:</strong> {{ doc.content }}<br>
+        <strong>Doc ID:</strong> {{ doc.doc_id }}<br>
+        <strong>Score:</strong> {{ doc.score }}<br>
+        <strong>Terms:</strong> {{ doc.term_hits }}
+      </li>
+    {% endfor %}
+    </ul>
+  {% elif query %}
+    <p>❌ 找不到與「{{ query }}」相關的結果。</p>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,4 @@
+jieba
+protobuf
+grpcio-tools
+python-snappy

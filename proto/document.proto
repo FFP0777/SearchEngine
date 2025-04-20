@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package search;
+
+message TermInfo {
+  string term = 1;
+  int32 offset = 2;
+  int32 length = 3;
+}
+
+message Document {
+  string content = 1;
+  repeated TermInfo terms = 2;
+}
+
+message PostingItem {
+  string doc_id = 1;
+  float tf = 2;
+}
+
+message PostingList {
+  repeated PostingItem items = 1;
+}
